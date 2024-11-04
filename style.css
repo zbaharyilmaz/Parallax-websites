@@ -10,7 +10,7 @@ body, html{
     line-height: 1.8rem;
     color: #666;
     /* height: 100% ayarını kaldırırsanız:body etiketi yalnızca içerik kadar yükseklik alır. Yani ekranda yeterince içerik yoksa body etiketi ekranın altına kadar uzanmaz.body elementine height: 100% verilmezse, flex veya grid yapıları kullanıldığında tam boy çalışmayabilir. Tam ekran çalışan flex veya grid düzenleri oluşturmak için body ve html’e height: 100% ayarı eklemek gerekir. */
-    border: 3px solid red;
+    
 }
 .background-container--image1{
     background-image: url(./images/bg.jpg);
@@ -18,23 +18,82 @@ body, html{
     height: 100%;
     background-position: center;
     background-size: cover;
-    /* border: 3px solid red; */
+ */
+
 }
 .background-container--image2{
     background-image: url(./images/bg2.jpg);
     height: 80%;
     background-position: center;
     background-size: cover;
+
 }
 .background-container--image3{
     background-image: url(./images/bg3.jpg);
     height: 80%;
     background-position: center;
     background-size: cover;
+
 }
 .background-container--image4{
     background-image: url(./images/bg4.jpg);
     height: 80%;
     background-position: center;
     background-size: cover;
+    
+}
+.background-container--image1, 
+.background-container--image2, 
+.background-container--image3, 
+.background-container--image4{
+    position: relative;
+    opacity: 0.7;
+    background-attachment: fixed;
+
+}
+.heading-container{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    width: 100%;
+   
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+}
+.heading-container__heading--big{
+    background-color: rgb(15, 15, 15);
+    text-transform: uppercase;
+    padding: 2.5rem;
+    outline: 7px inset purple;
+    outline-offset: 1rem;
+    letter-spacing: .7rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    font-size: 2.5rem;
+}
+img.heading-container__heading--logo{
+    width: 30%; 
+}
+.heading-container__heading--small{
+    background-color: rgb(15, 15, 15);
+    padding: 1rem;
+    outline: 7px inset purple;
+    outline-offset: .2rem;
+    letter-spacing: .7rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    font-size: 2.5rem;
+} 
+section{
+    text-align: center;
+    padding: 3rem;
+}
+.section--light{
+    background-color: rgb(242, 242, 242);
+
+}
+.section--dark{
+    background-color: rgb(39, 36, 36);
+    color: white;
 }
