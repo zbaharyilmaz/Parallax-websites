@@ -1,5 +1,3 @@
-    /* html neden düşün */
-    /* height: 100% ayarını yaparken html ve body etiketlerine bu özelliği vermemizin amacı, özellikle tam ekran düzenlerde sayfanın tamamının ekranın yüksekliğini kapsamasını sağlamaktır. Genel seçici * kullanmak ise aynı etkiyi sağlamaz, çünkü * seçici html ve body dışındaki tüm elementleri de kapsar ve tüm elemanların yüksekliğini %100 yapmaya çalışır, bu da istenmeyen sonuçlara yol açabilir. */
 body, html{
     margin: 0;
     padding: 0;
@@ -9,7 +7,6 @@ body, html{
     font-weight: 500;
     line-height: 1.8rem;
     color: #666;
-    /* height: 100% ayarını kaldırırsanız:body etiketi yalnızca içerik kadar yükseklik alır. Yani ekranda yeterince içerik yoksa body etiketi ekranın altına kadar uzanmaz.body elementine height: 100% verilmezse, flex veya grid yapıları kullanıldığında tam boy çalışmayabilir. Tam ekran çalışan flex veya grid düzenleri oluşturmak için body ve html’e height: 100% ayarı eklemek gerekir. */
     
 }
 .container-image1{
